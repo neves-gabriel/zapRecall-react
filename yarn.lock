@@ -102,7 +102,7 @@
   dependencies:
     "@babel/compat-data" "^7.12.13"
     "@babel/helper-validator-option" "^7.12.17"
-    browserslist "^4.14.5"
+    browserslist "^4.16.5"
     semver "^5.5.0"
 
 "@babel/helper-create-class-features-plugin@^7.12.1", "@babel/helper-create-class-features-plugin@^7.12.13", "@babel/helper-create-class-features-plugin@^7.12.17":
@@ -2400,7 +2400,7 @@ autoprefixer@^9.6.1:
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-9.8.6.tgz#3b73594ca1bf9266320c5acf1588d74dea74210f"
   integrity sha512-XrvP4VVHdRBCdX1S3WXVD8+RyG9qeb1D5Sn1DeLiG2xfSpzellk5k54xbUERJ3M5DggQxes39UGOTP8CFrEGbg==
   dependencies:
-    browserslist "^4.12.0"
+    browserslist "^4.16.5"
     caniuse-lite "^1.0.30001109"
     colorette "^1.2.1"
     normalize-range "^0.1.2"
@@ -2809,9 +2809,9 @@ browserify-zlib@^0.2.0:
   dependencies:
     pako "~1.0.5"
 
-browserslist@4.14.2:
-  version "4.14.2"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.14.2.tgz#1b3cec458a1ba87588cc5e9be62f19b6d48813ce"
+browserslist@^4.16.5:
+  version "4.16.5"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.16.5.tgz#1b3cec458a1ba87588cc5e9be62f19b6d48813ce"
   integrity sha512-HI4lPveGKUR0x2StIz+2FXfDk9SfVMrxn6PLh1JeGUwcuoDkdKZebWiyLRJ68iIPDpMI4JLVDf7S7XzslgWOhw==
   dependencies:
     caniuse-lite "^1.0.30001125"
@@ -2819,9 +2819,9 @@ browserslist@4.14.2:
     escalade "^3.0.2"
     node-releases "^1.1.61"
 
-browserslist@^4.0.0, browserslist@^4.12.0, browserslist@^4.14.5, browserslist@^4.16.3, browserslist@^4.6.2, browserslist@^4.6.4:
-  version "4.16.3"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.16.3.tgz#340aa46940d7db878748567c5dea24a48ddf3717"
+browserslist@^4.16.5, browserslist@^4.16.5, browserslist@^4.16.5, browserslist@^4.16.5, browserslist@^4.16.5, browserslist@^4.16.5:
+  version "4.16.5"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.16.5.tgz#340aa46940d7db878748567c5dea24a48ddf3717"
   integrity sha512-vIyhWmIkULaq04Gt93txdh+j02yX/JzlyhLYbV3YQCn/zvES3JnY7TifHHvvr1w5hTDluNKMkV05cs4vy8Q7sw==
   dependencies:
     caniuse-lite "^1.0.30001181"
@@ -2995,7 +2995,7 @@ caniuse-api@^3.0.0:
   resolved "https://registry.yarnpkg.com/caniuse-api/-/caniuse-api-3.0.0.tgz#5e4d90e2274961d46291997df599e3ed008ee4c0"
   integrity sha512-bsTwuIg/BZZK/vreVTYYbSWoe2F+71P7K5QGEX+pT250DZbfU1MQ5prOKpPR+LL6uWKK3KMwMCAS74QB3Um1uw==
   dependencies:
-    browserslist "^4.0.0"
+    browserslist "^4.16.5"
     caniuse-lite "^1.0.0"
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
@@ -3385,7 +3385,7 @@ core-js-compat@^3.6.2, core-js-compat@^3.8.0:
   resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.9.0.tgz#29da39385f16b71e1915565aa0385c4e0963ad56"
   integrity sha512-YK6fwFjCOKWwGnjFUR3c544YsnA/7DoLL0ysncuOJ4pwbriAtOpvM2bygdlcXbvQCQZ7bBU9CL4t7tGl7ETRpQ==
   dependencies:
-    browserslist "^4.16.3"
+    browserslist "^4.16.5"
     semver "7.0.0"
 
 core-js-pure@^3.0.0:
@@ -7951,7 +7951,7 @@ postcss-colormin@^4.0.3:
   resolved "https://registry.yarnpkg.com/postcss-colormin/-/postcss-colormin-4.0.3.tgz#ae060bce93ed794ac71264f08132d550956bd381"
   integrity sha512-WyQFAdDZpExQh32j0U0feWisZ0dmOtPl44qYmJKkq9xFWY3p+4qnRzCHeNrkeRhwPHz9bQ3mo0/yVkaply0MNw==
   dependencies:
-    browserslist "^4.0.0"
+    browserslist "^4.16.5"
     color "^3.0.0"
     has "^1.0.0"
     postcss "^8.2.10"
@@ -8147,7 +8147,7 @@ postcss-merge-rules@^4.0.3:
   resolved "https://registry.yarnpkg.com/postcss-merge-rules/-/postcss-merge-rules-4.0.3.tgz#362bea4ff5a1f98e4075a713c6cb25aefef9a650"
   integrity sha512-U7e3r1SbvYzO0Jr3UT/zKBVgYYyhAz0aitvGIYOYK5CPmkNih+WDSsS5tvPrJ8YMQYlEMvsZIiqmn7HdFUaeEQ==
   dependencies:
-    browserslist "^4.0.0"
+    browserslist "^4.16.5"
     caniuse-api "^3.0.0"
     cssnano-util-same-parent "^4.0.0"
     postcss "^8.2.10"
@@ -8178,7 +8178,7 @@ postcss-minify-params@^4.0.2:
   integrity sha512-G7eWyzEx0xL4/wiBBJxJOz48zAKV2WG3iZOqVhPet/9geefm/Px5uo1fzlHu+DOjT+m0Mmiz3jkQzVHe6wxAWg==
   dependencies:
     alphanum-sort "^1.0.0"
-    browserslist "^4.0.0"
+    browserslist "^4.16.5"
     cssnano-util-get-arguments "^4.0.0"
     postcss "^8.2.10"
     postcss-value-parser "^3.0.0"
@@ -8293,7 +8293,7 @@ postcss-normalize-unicode@^4.0.1:
   resolved "https://registry.yarnpkg.com/postcss-normalize-unicode/-/postcss-normalize-unicode-4.0.1.tgz#841bd48fdcf3019ad4baa7493a3d363b52ae1cfb"
   integrity sha512-od18Uq2wCYn+vZ/qCOeutvHjB5jm57ToxRaMeNuf0nWVHaP9Hua56QyMF6fs/4FSUnVIw0CBPsU0K4LnBPwYwg==
   dependencies:
-    browserslist "^4.0.0"
+    browserslist "^4.16.5"
     postcss "^8.2.10"
     postcss-value-parser "^3.0.0"
 
@@ -8321,7 +8321,7 @@ postcss-normalize@8.0.1:
   integrity sha512-rt9JMS/m9FHIRroDDBGSMsyW1c0fkvOJPy62ggxSHUldJO7B195TqFMqIf+lY5ezpDcYOV4j86aUp3/XbxzCCQ==
   dependencies:
     "@csstools/normalize.css" "^10.1.0"
-    browserslist "^4.6.2"
+    browserslist "^4.16.5"
     postcss "^8.2.10"
     postcss-browser-comments "^3.0.0"
     sanitize.css "^10.0.0"
@@ -8363,7 +8363,7 @@ postcss-preset-env@6.7.0:
   integrity sha512-eU4/K5xzSFwUFJ8hTdTQzo2RBLbDVt83QZrAvI07TULOkmyQlnYlpwep+2yIK+K+0KlZO4BvFcleOCCcUtwchg==
   dependencies:
     autoprefixer "^9.6.1"
-    browserslist "^4.6.4"
+    browserslist "^4.16.5"
     caniuse-lite "^1.0.30000981"
     css-blank-pseudo "^0.1.4"
     css-has-pseudo "^0.10.0"
@@ -8413,7 +8413,7 @@ postcss-reduce-initial@^4.0.3:
   resolved "https://registry.yarnpkg.com/postcss-reduce-initial/-/postcss-reduce-initial-4.0.3.tgz#7fd42ebea5e9c814609639e2c2e84ae270ba48df"
   integrity sha512-gKWmR5aUulSjbzOfD9AlJiHCGH6AEVLaM0AV+aSioxUDd16qXP1PCh8d1/BGVvpdWn8k/HiK7n6TjeoXN1F7DA==
   dependencies:
-    browserslist "^4.0.0"
+    browserslist "^4.16.5"
     caniuse-api "^3.0.0"
     has "^1.0.0"
     postcss "^8.2.10"
@@ -8807,7 +8807,7 @@ react-dev-utils@^11.0.3:
   dependencies:
     "@babel/code-frame" "7.10.4"
     address "1.1.2"
-    browserslist "4.14.2"
+    browserslist "^4.16.5"
     chalk "2.4.2"
     cross-spawn "7.0.3"
     detect-port-alt "1.1.6"
@@ -10092,7 +10092,7 @@ stylehacks@^4.0.0:
   resolved "https://registry.yarnpkg.com/stylehacks/-/stylehacks-4.0.3.tgz#6718fcaf4d1e07d8a1318690881e8d96726a71d5"
   integrity sha512-7GlLk9JwlElY4Y6a/rmbH2MhVlTyVmiJd1PfTCqFaIBEGMYNsrO/v3SeGTdhBThLg4Z+NbOk/qFMwCa+J+3p/g==
   dependencies:
-    browserslist "^4.0.0"
+    browserslist "^4.16.5"
     postcss "^7.0.0"
     postcss-selector-parser "^3.0.0"
 
