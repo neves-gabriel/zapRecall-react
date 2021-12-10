@@ -4,7 +4,17 @@
     cursor: pointer;
 }
 
+.small-logo {
+    position: absolute;
+    width: 141px;
+    height: 54px;
+    cursor: pointer;
+    left: 26px;
+    top: 26px;
+}
+
 .start-practice-btn {
+    margin: 15px 0;
     width: 345px;
     min-height: 72px;
     border: 3px solid #FFEF61;
