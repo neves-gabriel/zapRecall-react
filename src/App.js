@@ -8,16 +8,18 @@ export default function App() {
 
     const [showHomePage, setShowHomePage] = useState(true);
     const [showDeckPage, setShowDeckPage] = useState(false);
-    const [deckIndex, setDeckIndex] = useState(0);
+    const [deckIndex, setDeckIndex] = useState();
     const [selectedDeckData, setSelectedDeckData] = useState({});
 
     useEffect(() => {
-        setSelectedDeckData(decksData[deckIndex]);
+        if (deckIndex !== null && deckIndex !== undefined) {
+            setSelectedDeckData(decksData[deckIndex]);
+            setShowDeckPage(true);
+        }
     }, [deckIndex]);
     
     function startPractice(deckIndexSelected) {
         setShowHomePage(false);
-        setShowDeckPage(true);
         setDeckIndex(deckIndexSelected);
     }
     
