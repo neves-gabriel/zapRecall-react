@@ -1,6 +1,21 @@
 import '../css/style.css';
 
-export default function FlashCard() {
+function CardFront(props) {
 
-    return null
+    return (
+        <div className='front-card'>
+            <p className='card-question'>
+                {props.deckData.cards[0].question}
+            </p>
+        </div>
+    )
+}
+
+export default function FlashCard(props) {
+
+    return (
+        <>
+            <CardFront deckData={props.deckData} />
+        </>
+    )
 }

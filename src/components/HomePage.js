@@ -4,11 +4,12 @@ import BigLogo from "./BigLogo";
 import StartPracticeBtn from "./StartPracticeBtn";
 
 export default function HomePage(props) {
+
     return (
         <div className='homepage'>
             <BigLogo />
             <div>
-                {decksData.map(decksData => <StartPracticeBtn key={decksData.name} decksData={decksData} startPractice={props.startPractice} />)}
+                {decksData.map( (deckData, index) => <StartPracticeBtn key={index} deckName={deckData.name} value={props.value} index={index} selectDeck={props.selectDeck} />)}
             </div>
         </div>
     );
