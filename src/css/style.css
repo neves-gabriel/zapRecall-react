@@ -1,0 +1,31 @@
+.big-logo {
+    width: 218px;
+    height: 279px;
+    cursor: pointer;
+}
+
+.start-practice-btn {
+    width: 345px;
+    min-height: 72px;
+    border: 3px solid #FFEF61;
+    border-radius: 12px;
+    background: #FFFFFF;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.forward-icon {
+    width: 11px;
+    height: 16px;
+    background-image: url("../assets/img/forward-icon.svg");
+}
+
+.deck-name {
+    margin: auto 8px;
+}
