@@ -2,6 +2,7 @@
     width: 218px;
     height: 279px;
     cursor: pointer;
+    margin-bottom: 30px;
 }
 
 .small-logo {
@@ -38,4 +39,88 @@
 
 .deck-name {
     margin: auto 8px;
+}
+
+.card-container {
+    position: relative;
+    width: 392px;
+    height: 575.75px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 50px 20px 50px;
+}
+
+.back-card {
+    height: 575px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-question {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+}
+
+.card-question-title {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 0;
+}
+
+.card-answer {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.card-number-counter {
+    position: absolute;
+    width: 28px;
+    height: 21px;
+    right: 12px;
+    top: 12px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.turn-icon {
+    position: absolute;
+    width: 40px;
+    height: 36px;
+    cursor: pointer;
+    right: 22px;
+    bottom: 22px;
+}
+
+.btns-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-between;
+    width: 310px;
+}
+
+.btns-container button {
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+    width: 65px;
+    height: 48px;
+    border: 3px solid;
+    box-sizing: border-box;
+    border-radius: 12px;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    cursor: pointer;
 }
