@@ -53,6 +53,16 @@
     margin: auto 8px;
 }
 
+.deck-title {
+    position: absolute;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    top: 80px
+}
+
 .card-front, .card-back{
     position: relative;
     width: 392px;

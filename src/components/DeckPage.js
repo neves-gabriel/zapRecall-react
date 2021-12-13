@@ -41,6 +41,7 @@ export default function DeckPage(props) {
     return (
         <div className='deckpage'>
             <SmallLogo />
+            <span className='deck-title'>{deckData.name}</span>
             { isCardTurned ? <CardBack cardNumber={cardNumber} deckLength={deckLength} deckData={deckData} zapAnswer={zapAnswer} showAnswersBtns={showAnswersBtns} rightAnswers={rightAnswers}
                 turnCard={turnCard} setZapAnswer={setZapAnswer} setRightAnswers={setRightAnswers} setShowAnswersBtns={setShowAnswersBtns} /> 
                 : <CardFront cardNumber={cardNumber} deckLength={deckLength} deckData={deckData} turnCard={turnCard} /> 
