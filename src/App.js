@@ -33,6 +33,14 @@ export default function App() {
         }
     }
 
+    function restartPractice() {
+        setWrongAnswers(0);
+        setShowHomePage(false);
+        setShowSucessPage(false);
+        setShowFailurePage(false);
+        setShowDeckPage(true);
+    }
+
     function renderSucess() {
         setShowSucessPage(true);
         setShowHomePage(false);
@@ -45,13 +53,12 @@ export default function App() {
         setShowDeckPage(false);
     }
 
-
     return (
         <>
             {showHomePage ? <HomePage deckIndexSelected={deckIndex} selectDeck={startPractice} setZapAnswersTarget={setZapAnswersTarget} /> : null}
             {showDeckPage ? <DeckPage deckData={selectedDeckData} renderSucess={renderSucess} renderFailure={renderFailure} zapAnswersTarget={zapAnswersTarget} setWrongAnswers={setWrongAnswers} /> : null}
-            {showSucessPage ? <SucessPage /> : null }
-            {showFailurePage ? <FailurePage wrongAnswers={wrongAnswers} /> : null}
+            {showSucessPage ? <SucessPage restartPractice={restartPractice} /> : null }
+            {showFailurePage ? <FailurePage wrongAnswers={wrongAnswers} restartPractice={restartPractice} /> : null}
         </>
     );
 }

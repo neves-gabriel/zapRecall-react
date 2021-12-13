@@ -11,6 +11,11 @@ export default function SucessPage(props) {
             <span className='partying-face'/>
             </div>
             <p>Você não esqueceu de nenhum flashcard!</p>
+            <button className="start-practice-btn" onClick={() => props.restartPractice()}>
+                <span className='deck-name'>Tentar novamente</span>
+                <span className='forward-icon'/>
+                <span className='forward-icon'/>
+            </button>
         </div>
     )
 

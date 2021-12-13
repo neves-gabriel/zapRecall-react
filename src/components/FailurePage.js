@@ -15,6 +15,11 @@ export default function FailurePage(props) {
             <p>Você esqueceu {wrongAnswers} flashcards..<br/>
                 Não desanime! Na próxima você consegue!
             </p>
+            <button className="start-practice-btn" onClick={() => props.restartPractice()}>
+                <span className='deck-name'>Tentar novamente</span>
+                <span className='forward-icon'/>
+                <span className='forward-icon'/>
+            </button>
         </div>
     )
 
