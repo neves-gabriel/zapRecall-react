@@ -52,7 +52,7 @@ export default function CardBack(props) {
             </p>
             { showAnswersBtns ? 
                 <div className='btns-container'>
-                    {btnsData.map(btn => <button style={{ borderColor: btn.border }} onClick={ () => handleZapAnswer(btn.value) }>
+                    {btnsData.map(btn => <button style={{ borderColor: btn.border }} key={btn.name} onClick={ () => handleZapAnswer(btn.value) }>
                         {btn.name}
                     </button>)}
                 </div> : null 
