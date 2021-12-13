@@ -37,11 +37,23 @@
     background-image: url("../assets/img/forward-icon.svg");
 }
 
+.partying-face {
+    width: 36px;
+    height: 36px;
+    background-image: url("../assets/img/emoji_partying-face.svg");
+}
+
+.sad-but-relieved-face {
+    width: 36px;
+    height: 36px;
+    background-image: url("../assets/img/emoji_sad-but-relieved-face.svg");
+}
+
 .deck-name {
     margin: auto 8px;
 }
 
-.card-container {
+.card-front, .card-back{
     position: relative;
     width: 392px;
     height: 575.75px;
@@ -49,18 +61,33 @@
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
     border-radius: 12px;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 20px 50px 20px 50px;
 }
 
-.back-card {
-    height: 575px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.card-front {
+    justify-content: center;
+}
+
+.card-back {
+    justify-content: space-between; 
+}
+
+.card-back.learned {
+    border: 5px solid #000000;
+}
+
+.card-back.incorrect {
+    border: 5px solid #F64848;
+}
+
+.card-back.correct {
+    border: 5px solid #62DB38;
+}
+
+.card-back.zap {
+    border: 5px solid #FFEF61;
 }
 
 .card-question {
@@ -123,4 +150,25 @@
     line-height: 12px;
     text-align: center;
     cursor: pointer;
+}
+
+.resultpage .title {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.resultpage .title h1 {
+    margin-right: 13px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.resultpage p {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
 }
