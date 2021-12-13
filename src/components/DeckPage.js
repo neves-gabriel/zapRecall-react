@@ -33,7 +33,7 @@ export default function DeckPage(props) {
     }
 
     function renderResult() {
-        if (zappedAnswers >= zapAnswersTarget || zappedAnswers === deckLength) {
+        if (zappedAnswers >= zapAnswersTarget || zappedAnswers === (deckLength + 1) ) {
             props.setWrongAnswers(zapAnswersTarget - zappedAnswers);
             props.renderSucess();
         } else {
