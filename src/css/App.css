@@ -1,4 +1,6 @@
 .homepage {
+    font-family: Roboto;
+    font-style: normal;
     margin: 15vh auto;
     display: flex;
     width: 100vw;
@@ -9,6 +11,8 @@
 }
 
 .deckpage, .resultpage {
+    font-family: Roboto;
+    font-style: normal;
     margin: 0 auto;
     display: flex;
     width: 100vw;

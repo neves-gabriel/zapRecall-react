@@ -9,10 +9,14 @@ export default function CardBack(props) {
     const deckData = props.deckData;
     const showAnswersBtns = props.showAnswersBtns;
     const zapAnswer = props.zapAnswer;
+    const zappedAnswers = props.zappedAnswers;
 
     function handleZapAnswer(value) {
         props.setShowAnswersBtns(false);
         props.setZapAnswer(value);
+        if (value === 'zap') {
+            props.setZappedAnswers (zappedAnswers + 1)
+        }
         if (value === 'zap' || value === 'learned' || value === 'correct') {
             props.setRightAnswers(rightAnswers + 1)
         }

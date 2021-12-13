@@ -2,7 +2,7 @@
     width: 218px;
     height: 279px;
     cursor: pointer;
-    margin-bottom: 30px;
+    margin-bottom: 170px;
 }
 
 .small-logo {
@@ -29,6 +29,8 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    font-family: Roboto;
+    font-style: normal;
 }
 
 .forward-icon {
@@ -181,4 +183,30 @@
     font-size: 22px;
     line-height: 26px;
     text-align: center;
+}
+
+.zap-target-input {
+    display: flex;
+    flex-direction: column;
+    width: 345px;
+    min-height: 50px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding-left: 16px;
+    padding-top: 3px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #000000;
+    font-family: Roboto;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+::placeholder {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #000000;
 }

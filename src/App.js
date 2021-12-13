@@ -14,6 +14,7 @@ export default function App() {
     const [showFailurePage, setShowFailurePage] = useState(false);
     const [deckIndex, setDeckIndex] = useState();
     const [selectedDeckData, setSelectedDeckData] = useState({});
+    const [zapAnswersTarget , setZapAnswersTarget] = useState('')
 
     useEffect(() => {
         if (deckIndex !== null && deckIndex !== undefined) {
@@ -23,8 +24,12 @@ export default function App() {
     }, [deckIndex]);
     
     function startPractice(deckIndexSelected) {
+        if(zapAnswersTarget !== '' && zapAnswersTarget >= 1) {
         setShowHomePage(false);
         setDeckIndex(deckIndexSelected);
+        } else {
+            alert("A sua meta de Zaps tem que ser um número maior que 1")
+        }
     }
 
     function renderSucess() {
@@ -42,8 +47,8 @@ export default function App() {
 
     return (
         <>
-            {showHomePage ? <HomePage deckIndexSelected={deckIndex} selectDeck={startPractice} /> : null}
-            {showDeckPage ? <DeckPage deckData={selectedDeckData} renderSucess={renderSucess} renderFailure={renderFailure} /> : null}
+            {showHomePage ? <HomePage deckIndexSelected={deckIndex} selectDeck={startPractice} setZapAnswersTarget={setZapAnswersTarget} /> : null}
+            {showDeckPage ? <DeckPage deckData={selectedDeckData} renderSucess={renderSucess} renderFailure={renderFailure} zapAnswersTarget={zapAnswersTarget} /> : null}
             {showSucessPage ? <SucessPage /> : null }
             {showFailurePage ? <FailurePage /> : null}
         </>
