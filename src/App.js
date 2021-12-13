@@ -15,6 +15,7 @@ export default function App() {
     const [deckIndex, setDeckIndex] = useState();
     const [selectedDeckData, setSelectedDeckData] = useState({});
     const [zapAnswersTarget , setZapAnswersTarget] = useState('')
+    const [wrongAnswers , setWrongAnswers] = useState(4)
 
     useEffect(() => {
         if (deckIndex !== null && deckIndex !== undefined) {
@@ -48,9 +49,9 @@ export default function App() {
     return (
         <>
             {showHomePage ? <HomePage deckIndexSelected={deckIndex} selectDeck={startPractice} setZapAnswersTarget={setZapAnswersTarget} /> : null}
-            {showDeckPage ? <DeckPage deckData={selectedDeckData} renderSucess={renderSucess} renderFailure={renderFailure} zapAnswersTarget={zapAnswersTarget} /> : null}
+            {showDeckPage ? <DeckPage deckData={selectedDeckData} renderSucess={renderSucess} renderFailure={renderFailure} zapAnswersTarget={zapAnswersTarget} setWrongAnswers={setWrongAnswers} /> : null}
             {showSucessPage ? <SucessPage /> : null }
-            {showFailurePage ? <FailurePage /> : null}
+            {showFailurePage ? <FailurePage wrongAnswers={wrongAnswers} /> : null}
         </>
     );
 }

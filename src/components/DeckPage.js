@@ -33,9 +33,11 @@ export default function DeckPage(props) {
     }
 
     function renderResult() {
-        if (rightAnswers === deckLength && zappedAnswers >= zapAnswersTarget) {
+        if (zappedAnswers >= zapAnswersTarget || zappedAnswers === deckLength) {
+            props.setWrongAnswers(zapAnswersTarget - zappedAnswers);
             props.renderSucess();
         } else {
+            props.setWrongAnswers(zapAnswersTarget - zappedAnswers);
             props.renderFailure();
         }
     }
