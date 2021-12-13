@@ -12,7 +12,7 @@
 
 ### Developed with ❤️ by Gabriel Neves in Driven Education's Full-Stack Web Development Course.
 
-### App available at: zap-recall-sigma.vercel.app
+### App available at: https://zap-recall-sigma.vercel.app/
 
 ### Project preview:
 ![Preview do projeto](img/preview.png)
@@ -30,7 +30,7 @@
  
 ### Desenvolvido com ❤️ por Gabriel Neves no Curso de Desenvolvimento Web Full-Stack da Driven Education.
 
-### App disponivel em: zap-recall-sigma.vercel.app
+### App disponivel em: https://zap-recall-sigma.vercel.app/
 
 #### Preview do projeto:
 ![Preview do projeto](img/preview.png)
