@@ -4,7 +4,7 @@ export default function CardNumberCounter(props) {
     const deckLength = props.deckLength;
 
     return (
-        <span className='card-number-counter'>
+        <span className='card-number-counter' data-identifier="counter">
             {cardNumber + 1}/{deckLength}
         </span>
     )

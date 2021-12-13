@@ -8,7 +8,7 @@ export default function CardFront(props) {
     const deckData = props.deckData;
 
     return (
-        <div className='card-front'>
+        <div className='card-front' data-identifier="flashcard">
             <CardNumberCounter cardNumber={cardNumber} deckLength={deckLength} />
             <p className='card-question'>
                 {deckData.cards[cardNumber].question}

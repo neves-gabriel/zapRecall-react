@@ -77,36 +77,36 @@ const decksData = [
         name: "HMTL e CSS",
         cards: [
             {
-                question: "Como é inserido JavaScript em uma pagina web?",
-                answer: "com a script tag:<script>"
+                question: "Qual declaração é necessária no começo de todas as páginas web HTML5?",
+                answer: "<!DOCTYPE html><html>[código HTML5 aqui]</html>"
             },
             {
-                question: "Aonde colocamos os scripts?",
-                answer: "Nas seções Body e Head"
+                question: "Como colocamos um texto em Itálico em HTML?",
+                answer: "<i>Texto</i>"
             },
             {
-                question: "Quando o JavaScript é executado?",
-                answer: "Imediatamente, assim que a página carregar"
+                question: "Como colocamos um texto em Negrito em HTML?",
+                answer: "<b>Texto</b>"
             },
             {
-                question: "Quantos scripts uma página pode conter?",
-                answer: "Quantidade ilimitada"
+                question: "Qual elemento é geralmente colocado no topo da página?",
+                answer: "<header>"
             },
             {
-                question: "Quantos scripts uma página pode conter?",
-                answer: "Quantidade ilimitada"
+                question: "Qual elemento é geralmento colocado no rodapé da página?",
+                answer: "<footer>"
             },
             {
-                question: "De acordo com as boas práticas, onde as variaveis devem ser declaradas?",
-                answer: "Em um unico lugar no começo do código"
+                question: "Qual propriedade especifica a sombra de um elemento em CSS?",
+                answer: "Box shadow"
             },
             {
-                question: "Booleanos são usados em __?",
-                answer: "testes condicionais"
+                question: "Qual elemento é usado em quebras de linha?",
+                answer: "<br>"
             },
             {
-                question: "Um bloco de código que é executado quando chamado é?",
-                answer: "Uma função"
+                question: "O que é HTTP?",
+                answer: "HTTP é um protocolo que permite a obtenção de recursos, como documentos HTML"
             },
         ],
     },

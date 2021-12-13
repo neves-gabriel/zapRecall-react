@@ -46,7 +46,7 @@ export default function CardBack(props) {
     ]
 
     return (
-        <div className={`card-back ${zapAnswer}`} >
+        <div className={`card-back ${zapAnswer}`} data-identifier="flashcard">
             <CardNumberCounter cardNumber={cardNumber} deckLength={deckLength} />
             <p className='card-question-title'>
                 {deckData.cards[cardNumber].question}
@@ -57,7 +57,7 @@ export default function CardBack(props) {
             { showAnswersBtns ? 
                 <div className='btns-container'>
                     {btnsData.map(btn => <button style={{ borderColor: btn.border }} key={btn.name} onClick={ () => handleZapAnswer(btn.value) }>
-                        {btn.value === "zap" ? <strong>{btn.name}</strong> : <span>{btn.name}</span>}
+                        {btn.value === "zap" ? <b>{btn.name}</b> : <span>{btn.name}</span>}
                     </button>)}
                 </div> : null 
             }
